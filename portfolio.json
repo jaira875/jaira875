@@ -1,0 +1,114 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "initials": "YN",
+    "location": "Winnipeg, MB",
+    "focus": "detection · appsec · IR",
+    "updated": "2026",
+    "hero_eyebrow": "Cybersecurity / labs / investigations",
+    "hero_line_1": "Work I’ve",
+    "hero_word_1": "built.",
+    "hero_line_2": "Things I’ve",
+    "hero_word_2": "investigated.",
+    "hero_description": "A personal record of security projects, write-ups, experiments, and the things I learned while building them."
+  },
+  "projects": [
+    {
+      "number": "01",
+      "category": "THREAT HUNTING",
+      "title": "Suspicious PowerShell Detection Lab",
+      "year": "2026",
+      "summary": "Practice detection from evidence, not from a copied rule.",
+      "featured": true,
+      "tags": ["Windows", "PowerShell", "Detection"],
+      "cover": "/assets/project-01.svg",
+      "why": "Practice detection from evidence, not from a copied rule.",
+      "process": "Generated events, inspected process trees and command lines, then replayed the activity.",
+      "takeaway": "Context matters more than one suspicious string.",
+      "evidence": "$ labctl run powershell-detection\nsignal = powershell.exe\nparent = winword.exe\nhost = lab-win-01\nuser = analyst",
+      "body": "## Write-up\n\nI built a small Windows lab to practice turning telemetry into a detection hypothesis before writing a rule.\n\n### What I looked at\n- Parent and child process relationships\n- PowerShell command-line context\n- Host and user context\n- Replayed events to see what held up\n\n### Notes\nThe important part was not the final rule. It was learning which pieces of evidence changed the confidence of the investigation."
+    },
+    {
+      "number": "02",
+      "category": "APPLICATION SECURITY",
+      "title": "Web App Access-Control Review",
+      "year": "2026",
+      "summary": "Test one change at a time and document exactly what the server allows.",
+      "featured": false,
+      "tags": ["Burp Suite", "HTTP", "AppSec"],
+      "cover": "/assets/project-02.svg",
+      "why": "Practice authorization testing by changing one thing at a time.",
+      "process": "Mapped endpoints, captured baseline requests, changed identifiers and roles, then compared responses and side effects.",
+      "takeaway": "The original request, changed input, and resulting behavior belong together in the write-up.",
+      "evidence": "GET /api/invoices/1042\nAuthorization: Bearer <lab-token>\n\n# Change only the resource id.",
+      "body": "## Write-up\n\nMapped endpoints, captured baseline requests, changed identifiers and roles, then compared the server's behavior.\n\n### Notes\nKeep the original request, the one changed variable, and the response next to each other so the finding is easy to verify."
+    },
+    {
+      "number": "03",
+      "category": "INCIDENT RESPONSE",
+      "title": "Phishing Triage Exercise",
+      "year": "2026",
+      "summary": "Turn a vague suspicious-email report into a structured incident timeline.",
+      "featured": false,
+      "tags": ["IR", "Email", "Triage"],
+      "cover": "/assets/project-03.svg",
+      "why": "Practice moving from a first report to a defensible timeline.",
+      "process": "Reviewed headers and URLs, reconstructed the timeline, checked authentication activity, and listed containment steps.",
+      "takeaway": "Keep findings tied to evidence before jumping to a conclusion.",
+      "evidence": "Indicators\n- reply-to mismatch\n- lookalike domain\n- unexpected sign-in\n\nContainment\n- revoke sessions\n- reset credentials",
+      "body": "## Write-up\n\nWorked from the initial report toward a concise timeline and containment checklist."
+    },
+    {
+      "number": "04",
+      "category": "NETWORK SECURITY",
+      "title": "PCAP Investigation: Beaconing Pattern",
+      "year": "2026",
+      "summary": "Reduce a noisy packet capture to a small, defensible hypothesis.",
+      "featured": false,
+      "tags": ["Wireshark", "PCAP", "DNS"],
+      "cover": "/assets/project-04.svg",
+      "why": "Get more comfortable moving from noise to a defensible network hypothesis.",
+      "process": "Started with DNS and connection frequency, then checked timing, destinations, and protocol details.",
+      "takeaway": "Filtering is half the work. Writing down why each filter is useful keeps the investigation reproducible.",
+      "evidence": "dns\nhttp.request\ntcp.flags.syn==1\nframe.time_delta < 3",
+      "body": "## Write-up\n\nStarted with broad traffic, filtered toward repeated patterns, then documented why each filter mattered."
+    },
+    {
+      "number": "05",
+      "category": "SECURITY AUTOMATION",
+      "title": "Python Asset Snapshot Tool",
+      "year": "2026",
+      "summary": "Make recurring checks consistent with small, predictable automation.",
+      "featured": false,
+      "tags": ["Python", "Automation", "JSON"],
+      "cover": "/assets/project-05.svg",
+      "why": "Replace ad hoc host checks with a repeatable utility.",
+      "process": "Built a CLI with validation, explicit failures, and JSON output that can be diffed later.",
+      "takeaway": "Small security tools become more useful when their output is predictable and boring.",
+      "evidence": "python snapshot.py hosts.txt --format json\n\n{\n  \"host\": \"lab-web-01\",\n  \"reachable\": true\n}",
+      "body": "## Write-up\n\nA small CLI for repeatable host checks with output designed to be compared later."
+    }
+  ],
+  "experience": [
+    {"date": "2025 — PRESENT", "role": "Security / IT Role", "org": "Your Company · Winnipeg, MB", "detail": "Replace with your actual role and one concise responsibility."},
+    {"date": "2024 — 2025", "role": "Student / Technical Role", "org": "Your Organization · Winnipeg, MB", "detail": "Replace with your actual role and strongest responsibility."}
+  ],
+  "education": {
+    "date": "EXPECTED 2027",
+    "degree": "Bachelor’s Degree in Cybersecurity",
+    "school": "Your University · Winnipeg, MB",
+    "detail": "Add concentration, relevant coursework, or honors here."
+  },
+  "certifications": [
+    {"name": "CompTIA Security+", "detail": "Issued 2026 · replace with yours"},
+    {"name": "Additional certification", "detail": "Issuer · Year"},
+    {"name": "Additional certification", "detail": "Issuer · Year"}
+  ],
+  "skills": ["Linux", "Python", "Bash", "PowerShell", "Wireshark", "Burp Suite", "Nmap", "Git", "Docker", "SIEM", "HTTP", "Windows", "IAM", "Incident Response"],
+  "links": {
+    "github": "https://github.com/",
+    "linkedin": "https://www.linkedin.com/",
+    "email": "you@example.com",
+    "resume": "/assets/resume.pdf"
+  }
+}

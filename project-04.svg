@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+<rect width="1200" height="800" fill="#08080b"/>
+<rect x="60" y="60" width="1080" height="680" rx="26" fill="#0e0e13" stroke="#2b2b33"/>
+<path d="M60 210 H1140" stroke="#2b2b33"/>
+<circle cx="92" cy="115" r="7" fill="#9a9998"/><circle cx="115" cy="115" r="7" fill="#9a9998"/><circle cx="138" cy="115" r="7" fill="#9a9998"/>
+<text x="90" y="290" font-family="monospace" font-size="26" fill="#efe06a">PROJECT 04 / EVIDENCE</text>
+<text x="90" y="360" font-family="monospace" font-size="22" fill="#a963ff">signal</text><text x="240" y="360" font-family="monospace" font-size="22" fill="#f4f3f1">telemetry captured</text>
+<text x="90" y="415" font-family="monospace" font-size="22" fill="#48a9ff">scope</text><text x="240" y="415" font-family="monospace" font-size="22" fill="#f4f3f1">lab / controlled test</text>
+<rect x="90" y="500" width="900" height="130" rx="12" fill="#08080b" stroke="#292930"/>
+<text x="115" y="545" font-family="monospace" font-size="18" fill="#9a9998">// replace this panel with a real screenshot from the project</text>
+<text x="115" y="585" font-family="monospace" font-size="18" fill="#efe06a">evidence-first</text>
+</svg>
