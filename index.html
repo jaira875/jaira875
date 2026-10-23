@@ -445,7 +445,7 @@
               <li class="border-b border-line py-3.5 text-paper">Microsoft SC-300</li>
               <li class="border-b border-line py-3.5 text-paper">CrowdStrike CCFR</li>
               <li class="border-b border-line py-3.5 text-paper">Okta Certified Professional</li>
-              <li class="border-b border-line py-3.5 text-paper sm:col-span-2">AWS Security Specialty</li>
+              <li class="border-b border-line py-3.5 text-paper">AWS Security Specialty</li>
             </ul>
           </div>
           <aside class="h-fit rounded-2xl border border-line bg-panel p-6 lg:col-span-4 md:p-8">
@@ -508,7 +508,7 @@
         <div class="reveal mt-10 grid gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-2">
           <a class="group bg-ink p-6 transition-colors hover:bg-panel md:p-8" href="mailto:jairafarinas875@gmail.com">
             <p class="font-mono text-[0.72rem] uppercase tracking-[0.18em] text-muted">Email</p>
-            <p class="mt-4 break-all font-serif text-3xl tracking-tight text-paper transition-colors group-hover:text-teal md:text-4xl">jairafarinas875@gmail.com</p>
+            <p class="mt-4 font-serif text-[1.65rem] leading-tight tracking-tight text-paper transition-colors group-hover:text-teal sm:text-4xl">jairafarinas875<wbr>@gmail.com</p>
           </a>
           <a class="group bg-ink p-6 transition-colors hover:bg-panel md:p-8" href="https://www.linkedin.com/in/jairafarinas" target="_blank" rel="me noopener noreferrer">
             <p class="font-mono text-[0.72rem] uppercase tracking-[0.18em] text-muted">LinkedIn</p>
@@ -586,9 +586,8 @@
       var links = Array.prototype.slice.call(document.querySelectorAll("[data-nav]"));
       var seen = {};
       var sections = [];
-      links.forEach(function (link) {
-        var id = link.getAttribute("href");
-        if (!id || seen[id]) return;
+      ["#about", "#experience", "#projects", "#skills", "#certifications", "#education", "#contact"].forEach(function (id) {
+        if (seen[id]) return;
         var section = document.querySelector(id);
         if (section) {
           seen[id] = true;
