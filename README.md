@@ -1,16 +1,19 @@
-## Hi there 👋
+# Jaira Farinas
 
-<!--
-**jaira875/jaira875** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Detection Engineer** · Winnipeg, MB
 
-Here are some ideas to get you started:
+I build and tune SIEM detections that cut alert noise and accelerate response. Splunk, Microsoft Sentinel, Sigma, and Python — with a lab behind every skill.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Site: open `index.html` in this repo
+- LinkedIn: [in/jairafarinas](https://www.linkedin.com/in/jairafarinas)
+- Email: jairafarinas875@gmail.com
+
+## Now
+
+Security Engineer at LOG(N) Pacific · B.S. Cybersecurity, University of Maryland Global Campus (expected May 2027)
+
+## Focus
+
+- Detection engineering in Splunk and Microsoft Sentinel
+- Detection-as-code with Sigma, Git, and GitHub Actions
+- Incident investigation, canary tokens, and security automation

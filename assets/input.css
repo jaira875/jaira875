@@ -1,0 +1,304 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-ink: #0b0d10;
+  --color-panel: #12161b;
+  --color-paper: #e8edf2;
+  --color-secondary: #b7c3cf;
+  --color-muted: #93a0b0;
+  --color-line: #232a33;
+  --color-teal: #5ddecb;
+  --color-teal-bright: #b7f6ec;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/outfit-latin-300-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/outfit-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/outfit-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/outfit-latin-600-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/newsreader-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/newsreader-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2");
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    background-color: var(--color-ink);
+    background-image: radial-gradient(ellipse 80% 48% at 12% -12%, rgba(93, 222, 203, 0.14), transparent 52%);
+    background-repeat: no-repeat;
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background: transparent;
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: #1a4a44;
+    color: #f4fbf9;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 3px;
+  }
+
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@layer components {
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-teal);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    border-radius: 999px;
+    padding: 0.7rem 1.05rem;
+    font-size: 0.92rem;
+    font-weight: 500;
+    line-height: 1;
+    transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+  }
+
+  .btn-primary {
+    background: var(--color-teal);
+    color: #06211e;
+  }
+
+  .btn-primary:hover {
+    background: var(--color-teal-bright);
+  }
+
+  .btn-ghost {
+    border: 1px solid rgba(232, 237, 242, 0.16);
+    color: var(--color-paper);
+  }
+
+  .btn-ghost:hover {
+    border-color: var(--color-teal);
+    color: var(--color-teal);
+  }
+
+  .nav-link {
+    color: var(--color-muted);
+    font-size: 0.92rem;
+    transition: color 180ms ease;
+  }
+
+  .nav-link:hover,
+  .nav-link.is-active {
+    color: var(--color-paper);
+  }
+
+  .nav-link.is-active {
+    box-shadow: inset 0 -1px 0 var(--color-teal);
+  }
+
+  .rule {
+    height: 1px;
+    background: var(--color-line);
+  }
+}
+
+.rail {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .rail {
+    position: fixed;
+    top: 50%;
+    left: 1.5rem;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    transform: translateY(-50%);
+  }
+
+  .rail a {
+    color: var(--color-muted);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    transition: color 180ms ease;
+  }
+
+  .rail a:hover,
+  .rail a.is-active {
+    color: var(--color-teal);
+  }
+}
+
+#progress {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 70;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: var(--color-teal);
+  pointer-events: none;
+}
+
+#mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background: rgba(11, 13, 16, 0.96);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 220ms ease, visibility 220ms ease;
+}
+
+#mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+@media (min-width: 64rem) {
+  #mobile-menu {
+    display: none !important;
+  }
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+.js:not(.reduce-motion) .reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.js:not(.reduce-motion) .reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-rise {
+    animation: rise 800ms ease both;
+  }
+
+  .delay-1 { animation-delay: 80ms; }
+  .delay-2 { animation-delay: 160ms; }
+  .delay-3 { animation-delay: 240ms; }
+  .delay-4 { animation-delay: 340ms; }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  #mobile-menu,
+  .btn,
+  .nav-link,
+  .project {
+    transition: none;
+  }
+}

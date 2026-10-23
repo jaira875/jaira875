@@ -3,10 +3,624 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio Editor</title>
+  <title>Jaira Farinas — Detection Engineer</title>
+  <meta name="description" content="Jaira Farinas is a detection engineer in Winnipeg. SIEM coverage in Splunk and Microsoft Sentinel, Sigma detection-as-code, and incident investigation." />
+  <meta name="author" content="Jaira Farinas" />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta property="og:title" content="Jaira Farinas — Detection Engineer" />
+  <meta property="og:description" content="SIEM engineering, detection-as-code, and incident investigation. Winnipeg, MB." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="assets/site.css" />
+  <script>
+    document.documentElement.classList.add("js");
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("reduce-motion");
+    }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jaira Farinas",
+    "jobTitle": "Detection Engineer",
+    "email": "mailto:jairafarinas875@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Winnipeg",
+      "addressRegion": "MB",
+      "addressCountry": "CA"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/jairafarinas",
+      "https://github.com/jaira875"
+    ]
+  }
+  </script>
 </head>
-<body>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script src="https://unpkg.com/decap-cms@^3.8.0/dist/decap-cms.js"></script>
+<body id="top" class="antialiased">
+  <a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[90] focus:bg-panel focus:px-4 focus:py-2 focus:text-paper">Skip to content</a>
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="sticky top-0 z-40 border-b border-line/80 bg-ink/80 backdrop-blur-md">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
+      <a href="#top" class="font-mono text-xs tracking-[0.18em] text-paper" aria-label="Jaira Farinas, back to top">JF</a>
+      <nav class="hidden items-center gap-7 lg:flex" aria-label="Primary">
+        <a class="nav-link" data-nav href="#about">About</a>
+        <a class="nav-link" data-nav href="#experience">Experience</a>
+        <a class="nav-link" data-nav href="#projects">Projects</a>
+        <a class="nav-link" data-nav href="#skills">Skills</a>
+        <a class="nav-link" data-nav href="#contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a class="btn btn-primary hidden sm:inline-flex" href="mailto:jairafarinas875@gmail.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 6.5h18v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          </svg>
+          Email
+        </a>
+        <button id="menu-toggle" class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-paper lg:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Open menu</span>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M2 5h14M2 9h14M2 13h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="px-6 pb-10 pt-5 lg:hidden" aria-hidden="true" inert>
+    <div class="flex items-center justify-between">
+      <span class="font-mono text-xs tracking-[0.18em] text-muted">Menu</span>
+      <button id="menu-close" class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15" type="button">
+        <span class="sr-only">Close menu</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 3l10 10M13 3 3 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mt-12 flex flex-col gap-5" aria-label="Mobile">
+      <a class="font-serif text-4xl tracking-tight" data-nav href="#about">About</a>
+      <a class="font-serif text-4xl tracking-tight" data-nav href="#experience">Experience</a>
+      <a class="font-serif text-4xl tracking-tight" data-nav href="#projects">Projects</a>
+      <a class="font-serif text-4xl tracking-tight" data-nav href="#skills">Skills</a>
+      <a class="font-serif text-4xl tracking-tight" data-nav href="#certifications">Certifications</a>
+      <a class="font-serif text-4xl tracking-tight" data-nav href="#education">Education</a>
+      <a class="font-serif text-4xl tracking-tight" data-nav href="#contact">Contact</a>
+    </nav>
+    <div class="mt-auto flex flex-col gap-3 border-t border-line pt-6">
+      <a class="text-secondary" href="mailto:jairafarinas875@gmail.com">jairafarinas875@gmail.com</a>
+      <p class="font-mono text-xs uppercase tracking-[0.16em] text-muted">Winnipeg, MB, Canada</p>
+    </div>
+  </div>
+
+  <nav class="rail" aria-label="Section index">
+    <a data-nav href="#about">About</a>
+    <a data-nav href="#experience">Experience</a>
+    <a data-nav href="#projects">Projects</a>
+    <a data-nav href="#skills">Skills</a>
+    <a data-nav href="#contact">Contact</a>
+  </nav>
+
+  <main id="content">
+    <section class="mx-auto flex max-w-6xl flex-col px-5 sm:px-8 lg:min-h-[calc(100svh-4rem)]" aria-label="Introduction">
+      <div class="flex flex-1 flex-col justify-center py-16 md:py-20">
+        <p class="hero-rise kicker">Detection Engineer</p>
+        <div class="mt-6 grid items-end gap-8 lg:grid-cols-12 lg:gap-10">
+          <h1 class="hero-rise delay-1 font-serif text-[clamp(3.5rem,16vw,7.6rem)] leading-[0.9] tracking-[-0.04em] text-paper lg:col-span-7">
+            <span class="block">Jaira</span>
+            <span class="block">Farinas</span>
+          </h1>
+          <div class="hero-rise delay-2 lg:col-span-5 lg:pb-3">
+            <p class="max-w-md text-lg leading-relaxed text-secondary md:text-xl">
+              I build and tune detections that cut alert noise and accelerate response — with a documented portfolio and a lab behind every skill.
+            </p>
+            <p class="mt-5 font-mono text-[0.72rem] uppercase tracking-[0.18em] text-muted">Winnipeg, MB, Canada</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a class="btn btn-primary" href="mailto:jairafarinas875@gmail.com">Email</a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/jairafarinas" target="_blank" rel="me noopener noreferrer">LinkedIn</a>
+              <a class="btn btn-ghost" href="https://github.com/jaira875" target="_blank" rel="me noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-rise delay-4 grid gap-6 border-t border-line py-6 sm:grid-cols-3 sm:gap-8">
+        <div>
+          <p class="font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted">Now</p>
+          <p class="mt-2 text-paper">LOG(N) Pacific</p>
+          <p class="text-sm text-secondary">Security Engineer · Remote</p>
+        </div>
+        <div>
+          <p class="font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted">Focus</p>
+          <p class="mt-2 text-paper">SIEM engineering</p>
+          <p class="text-sm text-secondary">Detection-as-code · Investigations</p>
+        </div>
+        <div>
+          <p class="font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted">Toolbox</p>
+          <p class="mt-2 text-paper">Splunk · Sentinel · Sigma</p>
+          <p class="text-sm text-secondary">KQL · Python · GitHub Actions</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+        <div class="reveal grid gap-10 lg:grid-cols-12">
+          <div class="lg:col-span-5">
+            <h2>
+              <span class="kicker">01 — About</span>
+              <span class="mt-4 block max-w-sm font-serif text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.05] tracking-tight">Hands-on detection work.</span>
+            </h2>
+          </div>
+          <div class="lg:col-span-7">
+            <p class="text-lg leading-relaxed text-secondary">
+              I spend my time on SIEM coverage that another engineer can review. Detections go into Splunk and Microsoft Sentinel, the logic lives in Sigma under version control, and tuning continues until an alert is worth acting on.
+            </p>
+            <p class="mt-5 text-lg leading-relaxed text-secondary">
+              At LOG(N) Pacific that work covers brute-force, exfiltration, and early-ransomware behavior, plus canary tokens on critical assets and investigations that end in a runbook. The lab follows the same standard: every skill on this page has a write-up behind it.
+            </p>
+          </div>
+        </div>
+
+        <ol class="reveal mt-14 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-3">
+          <li class="bg-ink p-6 md:p-8">
+            <span class="font-mono text-xs text-teal">01</span>
+            <h3 class="mt-5 text-lg font-medium text-paper">SIEM engineering</h3>
+            <p class="mt-3 text-sm leading-relaxed text-secondary">Splunk and Microsoft Sentinel detections for brute force, exfiltration, and early ransomware across corporate and production systems.</p>
+          </li>
+          <li class="bg-ink p-6 md:p-8">
+            <span class="font-mono text-xs text-teal">02</span>
+            <h3 class="mt-5 text-lg font-medium text-paper">Detection-as-code</h3>
+            <p class="mt-3 text-sm leading-relaxed text-secondary">Sigma rules in Git, with test cases, tuning notes, and GitHub Actions so a change is reviewable before it deploys.</p>
+          </li>
+          <li class="bg-ink p-6 md:p-8">
+            <span class="font-mono text-xs text-teal">03</span>
+            <h3 class="mt-5 text-lg font-medium text-paper">Less alert noise</h3>
+            <p class="mt-3 text-sm leading-relaxed text-secondary">Tuning, Atomic Red Team validation, and canary tokens that fire when something real touches a critical asset.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="experience" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+        <div class="reveal flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <h2>
+            <span class="kicker">02 — Experience</span>
+            <span class="mt-4 block font-serif text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.05] tracking-tight">LOG(N) Pacific</span>
+          </h2>
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.16em] text-muted md:pb-2">Jan 2026 — Present · Remote</p>
+        </div>
+        <p class="reveal mt-4 max-w-2xl text-lg text-secondary">Security Engineer · Cybersecurity Analyst / Detection &amp; SecOps</p>
+
+        <div class="mt-14 grid gap-14">
+          <div class="reveal">
+            <h3 class="font-mono text-[0.72rem] uppercase tracking-[0.18em] text-teal">Detection Engineering &amp; SecOps</h3>
+            <ul class="mt-6 space-y-4">
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Built and maintained SIEM detection coverage in Splunk and Microsoft Sentinel for brute-force, exfiltration, and early-ransomware behavior across corporate and production systems.</span></li>
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Authored detections as code in Sigma, version-controlled in Git with test cases and tuning notes, and deployed through GitHub Actions so the logic stays reviewable and repeatable.</span></li>
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Designed and deployed canary tokens and early-warning tripwires around critical assets, generating high-fidelity alerts before activity reached sensitive systems.</span></li>
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Investigated incidents end to end — malware analysis, exfiltration assessment, timeline reconstruction, and IOC extraction — and wrote runbooks to standardize response.</span></li>
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Wrote KQL queries, dashboards, and analytic rules in Sentinel, and Python automation to enrich alerts and validate detections against Atomic Red Team replays.</span></li>
+            </ul>
+          </div>
+
+          <div class="reveal">
+            <h3 class="font-mono text-[0.72rem] uppercase tracking-[0.18em] text-teal">Corporate Security &amp; Endpoint</h3>
+            <ul class="mt-6 space-y-4">
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Partnered with IT to enforce security standards across the device fleet: endpoint protection with CrowdStrike and Defender, managed-device requirements, OS compliance, and VPN access controls.</span></li>
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Drove a proof-of-concept and rollout of Zero Trust access with Okta, OAuth, and YubiKey/passkeys.</span></li>
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Advised Marketing, Finance, and HR, translating security risk into plain-language decisions.</span></li>
+            </ul>
+          </div>
+
+          <div class="reveal">
+            <h3 class="font-mono text-[0.72rem] uppercase tracking-[0.18em] text-teal">Vulnerability Management</h3>
+            <ul class="mt-6 space-y-4">
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Ran enterprise vulnerability assessments with Tenable across Windows and Linux, and delivered prioritized remediation plans that drove major reductions in critical and high-risk findings.</span></li>
+              <li class="grid grid-cols-[0.7rem_1fr] gap-4 text-secondary leading-relaxed"><span class="mt-[0.65rem] h-1.5 w-1.5 bg-teal" aria-hidden="true"></span><span>Applied DISA STIG benchmarks and automated compliance checks and patch workflows with PowerShell.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+        <div class="reveal flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <h2>
+            <span class="kicker">03 — Projects</span>
+            <span class="mt-4 block font-serif text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.05] tracking-tight">Labs with the debugging left in.</span>
+          </h2>
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.16em] text-muted md:pb-2">07 repositories</p>
+        </div>
+
+        <div class="reveal mt-12 border-b border-line">
+          <a class="project group grid gap-4 border-t border-line py-7 transition-colors duration-200 hover:bg-panel md:grid-cols-12 md:items-start md:gap-6 md:px-4" href="https://github.com/jaira875/detection-as-code" target="_blank" rel="noopener noreferrer">
+            <span class="font-mono text-xs text-muted md:col-span-1 md:pt-1">01</span>
+            <span class="md:col-span-6">
+              <span class="block text-xl text-paper transition-colors group-hover:text-teal">Detection-as-Code Repository</span>
+              <span class="mt-2 block text-sm leading-relaxed text-secondary">A home-lab pipeline that replays attacks with Atomic Red Team, writes Sigma detections against them, validates the logic in Python, and syncs rules through CI.</span>
+            </span>
+            <span class="flex flex-wrap gap-2 md:col-span-4 md:justify-end">
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Elastic</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Sigma</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Python</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">GitHub Actions</span>
+            </span>
+            <span class="font-mono text-sm text-muted transition-colors group-hover:text-teal md:col-span-1 md:pt-1 md:text-right" aria-hidden="true">↗</span>
+            <span class="sr-only"> on GitHub</span>
+          </a>
+
+          <a class="project group grid gap-4 border-t border-line py-7 transition-colors duration-200 hover:bg-panel md:grid-cols-12 md:items-start md:gap-6 md:px-4" href="https://github.com/jaira875/wazuh-splunk-pipeline" target="_blank" rel="noopener noreferrer">
+            <span class="font-mono text-xs text-muted md:col-span-1 md:pt-1">02</span>
+            <span class="md:col-span-6">
+              <span class="block text-xl text-paper transition-colors group-hover:text-teal">SIEM Ingestion Pipeline</span>
+              <span class="mt-2 block text-sm leading-relaxed text-secondary">Log ingestion and normalization documented source by source, including what broke during onboarding and how each issue was fixed.</span>
+            </span>
+            <span class="flex flex-wrap gap-2 md:col-span-4 md:justify-end">
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Wazuh</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Splunk</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Sigma</span>
+            </span>
+            <span class="font-mono text-sm text-muted transition-colors group-hover:text-teal md:col-span-1 md:pt-1 md:text-right" aria-hidden="true">↗</span>
+            <span class="sr-only"> on GitHub</span>
+          </a>
+
+          <a class="project group grid gap-4 border-t border-line py-7 transition-colors duration-200 hover:bg-panel md:grid-cols-12 md:items-start md:gap-6 md:px-4" href="https://github.com/jaira875/investigations" target="_blank" rel="noopener noreferrer">
+            <span class="font-mono text-xs text-muted md:col-span-1 md:pt-1">03</span>
+            <span class="md:col-span-6">
+              <span class="block text-xl text-paper transition-colors group-hover:text-teal">Incident Investigation Portfolio</span>
+              <span class="mt-2 block text-sm leading-relaxed text-secondary">End-to-end write-ups mapped to MITRE ATT&amp;CK — scope, timeline, IOCs, root cause, and recommendations — with the debugging left in.</span>
+            </span>
+            <span class="flex flex-wrap gap-2 md:col-span-4 md:justify-end">
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Splunk</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Sentinel</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">KQL</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">ATT&amp;CK</span>
+            </span>
+            <span class="font-mono text-sm text-muted transition-colors group-hover:text-teal md:col-span-1 md:pt-1 md:text-right" aria-hidden="true">↗</span>
+            <span class="sr-only"> on GitHub</span>
+          </a>
+
+          <a class="project group grid gap-4 border-t border-line py-7 transition-colors duration-200 hover:bg-panel md:grid-cols-12 md:items-start md:gap-6 md:px-4" href="https://github.com/jaira875/canary-tokens" target="_blank" rel="noopener noreferrer">
+            <span class="font-mono text-xs text-muted md:col-span-1 md:pt-1">04</span>
+            <span class="md:col-span-6">
+              <span class="block text-xl text-paper transition-colors group-hover:text-teal">Canary Token &amp; Honeypot Lab</span>
+              <span class="mt-2 block text-sm leading-relaxed text-secondary">Canary tokens and a honeypot, tripped with simulated intrusions, and the alerting path that catches the activity early.</span>
+            </span>
+            <span class="flex flex-wrap gap-2 md:col-span-4 md:justify-end">
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Canarytokens</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Sentinel</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">KQL</span>
+            </span>
+            <span class="font-mono text-sm text-muted transition-colors group-hover:text-teal md:col-span-1 md:pt-1 md:text-right" aria-hidden="true">↗</span>
+            <span class="sr-only"> on GitHub</span>
+          </a>
+
+          <a class="project group grid gap-4 border-t border-line py-7 transition-colors duration-200 hover:bg-panel md:grid-cols-12 md:items-start md:gap-6 md:px-4" href="https://github.com/jaira875/sentinel-detections" target="_blank" rel="noopener noreferrer">
+            <span class="font-mono text-xs text-muted md:col-span-1 md:pt-1">05</span>
+            <span class="md:col-span-6">
+              <span class="block text-xl text-paper transition-colors group-hover:text-teal">Cloud SIEM Detection Lab</span>
+              <span class="mt-2 block text-sm leading-relaxed text-secondary">An Azure Sentinel workspace that mirrors on-prem Splunk detections in KQL, so the same coverage is proven in both SIEMs.</span>
+            </span>
+            <span class="flex flex-wrap gap-2 md:col-span-4 md:justify-end">
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Azure</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Sentinel</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">KQL</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Defender</span>
+            </span>
+            <span class="font-mono text-sm text-muted transition-colors group-hover:text-teal md:col-span-1 md:pt-1 md:text-right" aria-hidden="true">↗</span>
+            <span class="sr-only"> on GitHub</span>
+          </a>
+
+          <a class="project group grid gap-4 border-t border-line py-7 transition-colors duration-200 hover:bg-panel md:grid-cols-12 md:items-start md:gap-6 md:px-4" href="https://github.com/jaira875/sec-automation" target="_blank" rel="noopener noreferrer">
+            <span class="font-mono text-xs text-muted md:col-span-1 md:pt-1">06</span>
+            <span class="md:col-span-6">
+              <span class="block text-xl text-paper transition-colors group-hover:text-teal">Python Security Automation Toolkit</span>
+              <span class="mt-2 block text-sm leading-relaxed text-secondary">Standalone tools — an alert enricher, a log parser, and an IOC checker — built and tested like production software.</span>
+            </span>
+            <span class="flex flex-wrap gap-2 md:col-span-4 md:justify-end">
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Python</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">REST APIs</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">pytest</span>
+            </span>
+            <span class="font-mono text-sm text-muted transition-colors group-hover:text-teal md:col-span-1 md:pt-1 md:text-right" aria-hidden="true">↗</span>
+            <span class="sr-only"> on GitHub</span>
+          </a>
+
+          <a class="project group grid gap-4 border-t border-line py-7 transition-colors duration-200 hover:bg-panel md:grid-cols-12 md:items-start md:gap-6 md:px-4" href="https://github.com/jaira875/threat-hunting" target="_blank" rel="noopener noreferrer">
+            <span class="font-mono text-xs text-muted md:col-span-1 md:pt-1">07</span>
+            <span class="md:col-span-6">
+              <span class="block text-xl text-paper transition-colors group-hover:text-teal">Threat-Hunt &amp; Phishing Analysis Labs</span>
+              <span class="mt-2 block text-sm leading-relaxed text-secondary">Hypothesis-driven hunts and email-header analysis, with the findings and the detections that came out of them.</span>
+            </span>
+            <span class="flex flex-wrap gap-2 md:col-span-4 md:justify-end">
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Splunk</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Sysmon</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">Email</span>
+              <span class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-muted">ATT&amp;CK</span>
+            </span>
+            <span class="font-mono text-sm text-muted transition-colors group-hover:text-teal md:col-span-1 md:pt-1 md:text-right" aria-hidden="true">↗</span>
+            <span class="sr-only"> on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+        <div class="reveal">
+          <h2>
+            <span class="kicker">04 — Skills</span>
+            <span class="mt-4 block max-w-xl font-serif text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.05] tracking-tight">Tools from the queue and the lab.</span>
+          </h2>
+        </div>
+        <div class="reveal mt-12 grid gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-2">
+          <article class="bg-ink p-6 md:p-8">
+            <h3 class="text-lg font-medium text-paper">Detection &amp; SIEM</h3>
+            <ul class="mt-5 flex flex-wrap gap-2">
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Splunk</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Microsoft Sentinel</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Elastic</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Wazuh</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Sigma</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">KQL</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">SPL</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Detection-as-code</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Alert tuning</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Canary tokens</li>
+            </ul>
+          </article>
+          <article class="bg-ink p-6 md:p-8">
+            <h3 class="text-lg font-medium text-paper">Investigation &amp; Automation</h3>
+            <ul class="mt-5 flex flex-wrap gap-2">
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Incident response</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Malware analysis</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Threat hunting</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">MITRE ATT&amp;CK</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Pyramid of Pain</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">IOC extraction</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Runbooks</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Python</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">PowerShell</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Bash</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">GitHub Actions</li>
+            </ul>
+          </article>
+          <article class="bg-ink p-6 md:p-8">
+            <h3 class="text-lg font-medium text-paper">Endpoint, Identity &amp; Cloud</h3>
+            <ul class="mt-5 flex flex-wrap gap-2">
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">CrowdStrike</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Defender for Endpoint</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Okta</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">OAuth</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">YubiKey / passkeys</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Zero Trust</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Azure / Sentinel</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">AWS</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">VPN / NSG</li>
+            </ul>
+          </article>
+          <article class="bg-ink p-6 md:p-8">
+            <h3 class="text-lg font-medium text-paper">Vulnerability &amp; Frameworks</h3>
+            <ul class="mt-5 flex flex-wrap gap-2">
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">Tenable</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">DISA STIG</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">CVSS</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">NIST 800-53</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">NIST 800-61</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">NIST CSF</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">PCI-DSS</li>
+              <li class="rounded-full bg-panel px-3 py-1.5 text-sm text-secondary">HIPAA</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+        <div class="reveal">
+          <h2>
+            <span class="kicker">05 — Certifications</span>
+            <span class="mt-4 block font-serif text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.05] tracking-tight">Earned, and still in progress.</span>
+          </h2>
+        </div>
+        <div class="reveal mt-12 grid gap-12 lg:grid-cols-12">
+          <div class="lg:col-span-8">
+            <p class="font-mono text-[0.72rem] uppercase tracking-[0.18em] text-muted">Earned</p>
+            <ul class="mt-4 grid border-t border-line sm:grid-cols-2 sm:gap-x-10">
+              <li class="border-b border-line py-3.5 text-paper">CompTIA Security+</li>
+              <li class="border-b border-line py-3.5 text-paper">CompTIA CySA+</li>
+              <li class="border-b border-line py-3.5 text-paper">Blue Team Level 1 (BTL1)</li>
+              <li class="border-b border-line py-3.5 text-paper">Blue Team Level 2 (BTL2)</li>
+              <li class="border-b border-line py-3.5 text-paper">Splunk Core Certified User</li>
+              <li class="border-b border-line py-3.5 text-paper">Splunk Enterprise Certified Admin</li>
+              <li class="border-b border-line py-3.5 text-paper">Microsoft SC-200</li>
+              <li class="border-b border-line py-3.5 text-paper">Microsoft SC-300</li>
+              <li class="border-b border-line py-3.5 text-paper">CrowdStrike CCFR</li>
+              <li class="border-b border-line py-3.5 text-paper">Okta Certified Professional</li>
+              <li class="border-b border-line py-3.5 text-paper">AWS Security Specialty</li>
+            </ul>
+          </div>
+          <aside class="h-fit rounded-2xl border border-line bg-panel p-6 lg:col-span-4 md:p-8">
+            <p class="font-mono text-[0.72rem] uppercase tracking-[0.18em] text-teal">In progress</p>
+            <p class="mt-3 text-sm text-secondary">Employer-sponsored.</p>
+            <ul class="mt-6 space-y-4">
+              <li>
+                <p class="text-paper">GIAC GCFA</p>
+                <p class="text-sm text-secondary">Forensic Analyst</p>
+              </li>
+              <li>
+                <p class="text-paper">GIAC GCDA</p>
+                <p class="text-sm text-secondary">Detection Analyst</p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+        <div class="reveal grid gap-8 md:grid-cols-12 md:items-end">
+          <div class="md:col-span-7">
+            <h2>
+              <span class="kicker">06 — Education</span>
+              <span class="mt-4 block font-serif text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.05] tracking-tight">B.S. in Cybersecurity</span>
+            </h2>
+            <p class="mt-4 text-lg text-secondary">University of Maryland Global Campus</p>
+          </div>
+          <dl class="grid grid-cols-3 gap-4 border-t border-line pt-6 md:col-span-5 md:border-t-0 md:pt-0">
+            <div>
+              <dt class="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-muted">Expected</dt>
+              <dd class="mt-2 text-paper">May 2027</dd>
+            </div>
+            <div>
+              <dt class="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-muted">GPA</dt>
+              <dd class="mt-2 text-paper">4.0</dd>
+            </div>
+            <div>
+              <dt class="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-muted">Honors</dt>
+              <dd class="mt-2 text-paper">Dean’s List</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+        <div class="reveal">
+          <h2>
+            <span class="kicker">07 — Contact</span>
+            <span class="mt-4 block max-w-3xl font-serif text-[clamp(2.6rem,6vw,5rem)] leading-[1.02] tracking-tight">The fastest path is email.</span>
+          </h2>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-secondary">
+            Detection engineering, an investigation write-up, or a question about the lab — send a note or find me on LinkedIn.
+          </p>
+        </div>
+        <div class="reveal mt-10 grid gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-2">
+          <a class="group bg-ink p-6 transition-colors hover:bg-panel md:p-8" href="mailto:jairafarinas875@gmail.com">
+            <p class="font-mono text-[0.72rem] uppercase tracking-[0.18em] text-muted">Email</p>
+            <p class="mt-4 font-serif text-[1.65rem] leading-tight tracking-tight text-paper transition-colors group-hover:text-teal sm:text-4xl">jairafarinas875<wbr>@gmail.com</p>
+          </a>
+          <a class="group bg-ink p-6 transition-colors hover:bg-panel md:p-8" href="https://www.linkedin.com/in/jairafarinas" target="_blank" rel="me noopener noreferrer">
+            <p class="font-mono text-[0.72rem] uppercase tracking-[0.18em] text-muted">LinkedIn</p>
+            <p class="mt-4 font-serif text-3xl tracking-tight text-paper transition-colors group-hover:text-teal md:text-4xl">in/jairafarinas</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-8">
+      <p>Jaira Farinas · Detection Engineer</p>
+      <p>Winnipeg, MB, Canada</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.getElementById("menu-toggle");
+      var closeBtn = document.getElementById("menu-close");
+      var menu = document.getElementById("mobile-menu");
+      var progress = document.getElementById("progress");
+      var reduce = root.classList.contains("reduce-motion");
+
+      function setMenu(open) {
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.querySelector(".sr-only").textContent = open ? "Close menu" : "Open menu";
+        menu.classList.toggle("is-open", open);
+        menu.setAttribute("aria-hidden", String(!open));
+        menu.inert = !open;
+        document.body.classList.toggle("menu-open", open);
+        if (open) {
+          closeBtn.focus();
+        }
+      }
+
+      toggle.addEventListener("click", function () {
+        setMenu(toggle.getAttribute("aria-expanded") !== "true");
+      });
+
+      closeBtn.addEventListener("click", function () {
+        setMenu(false);
+        toggle.focus();
+      });
+
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          setMenu(false);
+        });
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+          setMenu(false);
+          toggle.focus();
+        }
+      });
+
+      var reveals = document.querySelectorAll(".reveal");
+      if (!reduce && "IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-in");
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+        reveals.forEach(function (el) { observer.observe(el); });
+      } else {
+        reveals.forEach(function (el) { el.classList.add("is-in"); });
+      }
+
+      var links = Array.prototype.slice.call(document.querySelectorAll("[data-nav]"));
+      var seen = {};
+      var sections = [];
+      ["#about", "#experience", "#projects", "#skills", "#certifications", "#education", "#contact"].forEach(function (id) {
+        if (seen[id]) return;
+        var section = document.querySelector(id);
+        if (section) {
+          seen[id] = true;
+          sections.push(section);
+        }
+      });
+
+      if ("IntersectionObserver" in window && sections.length) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var id = "#" + entry.target.id;
+            links.forEach(function (link) {
+              var on = link.getAttribute("href") === id;
+              link.classList.toggle("is-active", on);
+              if (on) link.setAttribute("aria-current", "true");
+              else link.removeAttribute("aria-current");
+            });
+          });
+        }, { rootMargin: "-45% 0px -45% 0px", threshold: 0 });
+        sections.forEach(function (section) { spy.observe(section); });
+      }
+
+      function onScroll() {
+        var scrolled = window.scrollY;
+        var height = document.documentElement.scrollHeight - window.innerHeight;
+        var value = height > 0 ? scrolled / height : 0;
+        progress.style.transform = "scaleX(" + value + ")";
+      }
+
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+    })();
+  </script>
 </body>
 </html>
